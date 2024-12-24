@@ -1,6 +1,5 @@
 # ▎Bankist Project 💲💱
-#### (deme link)[]
-
+### [demo link](https://kmohadesek.github.io/Bankist/)
 Welcome to the Bankist project! This is a simple banking application that allows users to log in using their username and PIN, manage their accounts, transfer money, and even request loans. This project is built using JavaScript, HTML, and CSS.
 
 ▎Features

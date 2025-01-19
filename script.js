@@ -116,10 +116,6 @@ const formatMovementDate = function (date, locale) {
   if (daysPassed === 2) return 'Yesterday';
   if (daysPassed <= 7) return `${daysPassed} days ago`;
 
-  // const day = `${date.getDate()}`.padStart(2, 0);
-  // const month = `${date.getMonth() + 1}`.padStart(2, 0);
-  // const year = date.getFullYear();
-  // return `${day}/${month}/${year}`;
   return new Intl.DateTimeFormat(locale).format(date)
 
 }
@@ -250,13 +246,8 @@ const startLogOutTimer = function () {
 };
 
 
-// Event handlers
+//! Event handlers
 let currentAccount, timer;
-
-// FAKE ALWAYS LOGGED IN
-// currentAccount = account1;
-// updateUI(currentAccount);
-// containerApp.style.opacity = 100;
 
 
 const btnDisplayLogin = btnLogin.addEventListener('click', function (e) {
@@ -287,7 +278,6 @@ const btnDisplayLogin = btnLogin.addEventListener('click', function (e) {
 
     labelDate.textContent = new Intl.DateTimeFormat
       (currentAccount.locale, options).format(now);
-
 
     // Clear the input fields
     inputLoginUsername.value = inputLoginPin.value = '';
